@@ -1,0 +1,34 @@
+.container {
+  max-height: 400px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.canvas {
+  /* width: 800px;
+  height: 500px; */
+  display: block;
+  margin: auto;
+}
+
+.download {
+  width: 100px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  background-color: #6085d1;
+  border: 2px solid #6085d1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 13px #5555ff;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.download:hover {
+  background-color: #fff;
+  color: #6085d1;
+}

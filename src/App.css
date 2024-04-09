@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color: #1e1e20;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  padding-bottom: 20px;
+  background-color: #1e1e20;
+  padding: 0 25px;
+  padding-top: 20px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infContainer {
+  width: 25%;
+  background-color: #33363d;
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+.drawContainer {
+  width: 74%;
+}

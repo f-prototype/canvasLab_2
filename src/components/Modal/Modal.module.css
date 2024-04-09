@@ -1,0 +1,157 @@
+.container {
+  padding: 0;
+  background-color: transparent;
+  overflow: visible;
+  border: none;
+}
+
+.container::backdrop {
+  background-color: #0000009c;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: #1a1a23;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  border: none;
+  box-shadow: 0 0 0 1px #ad9696;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  z-index: 3;
+}
+
+.close:hover {
+  transform: scale(0.9);
+}
+
+.resize {
+  width: 100px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  background-color: #6085d1;
+  border: 2px solid #6085d1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 13px #5555ff;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.resize:hover {
+  background-color: #fff;
+  color: #6085d1;
+}
+
+.resizeBox {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.tooltipToggle {
+  border: none;
+  padding: 0;
+  display: block;
+}
+
+.tooltip {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  height: 25px;
+}
+
+.tooltipText {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 10px 5px 5px 10px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltipToggle:hover + .tooltipText,
+.tooltipToggle:focus + .tooltipText {
+  display: block;
+}
+
+.infoSizeBox {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.selectBox {
+  width: 300px;
+}
+
+.checkboxBox {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.aplly {
+  width: 100px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  background-color: #6085d1;
+  border: 2px solid #6085d1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 13px #5555ff;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.aplly:hover {
+  background-color: #fff;
+  color: #6085d1;
+}
